@@ -1,0 +1,124 @@
+
+{
+    box-sizing:border-box;
+}
+
+body{
+    margin:0;
+    font-family:Arial, sans-serif;
+    background-image:url("download.jpg");
+    background-size:cover;
+    background-position:center;
+    min-height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    padding:20px;
+}
+
+body::before{
+    content:"";
+    position:fixed;
+    inset:0;
+    background-image:url("download.jpg");
+    background-size:cover;
+    background-position:center;
+    filter:blur(6px);
+    transform:scale(1.1);
+    z-index:-1;
+}
+
+.container{
+    width:100%;
+    display:flex;
+    justify-content:center;
+}
+
+.card{
+    width:100%;
+    max-width:420px;
+    padding:clamp(20px,4vw,40px);
+    border-radius:20px;
+    color:white;
+    text-align:center;
+    background:rgba(20,20,30,0.55);
+    backdrop-filter:blur(25px);
+    -webkit-backdrop-filter:blur(25px);
+    border:1px solid rgba(255,255,255,0.15);
+    box-shadow:0 10px 40px rgba(0,0,0,0.4);
+}
+
+.profile{
+    width:clamp(65px,18vw,90px);
+    height:clamp(65px,18vw,90px);
+    border-radius:50%;
+    object-fit:cover;
+    margin-bottom:12px;
+}
+
+h1{
+    font-size:clamp(18px,4vw,28px);
+    margin:10px 0;
+}
+
+p{
+    font-size:clamp(13px,3vw,16px);
+    opacity:0.85;
+}
+
+.time{
+    text-align:left;
+    font-size:clamp(12px,2.8vw,14px);
+    margin-bottom:10px;
+    opacity:0.7;
+}
+
+.buttons{
+    margin-top:20px;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    gap:clamp(12px,4vw,20px);
+    flex-wrap:wrap;
+}
+
+.btn{
+    width:clamp(40px,12vw,55px);
+    height:clamp(40px,12vw,55px);
+    border-radius:50%;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    transition:0.25s;
+}
+
+.btn img{
+    width:24px;
+    height:24px;
+}
+
+.btn:hover{
+    transform:scale(1.1);
+}
+
+.discord{
+    background:#5865F2;
+}
+
+.github{
+    background:black;
+}
+
+.mail{
+    background:#EA4335;
+}
+
+.whatsapp{
+    background-color:#25d366;
+}
+
+.linkedin{
+    background-color:white;
+}
+
+
